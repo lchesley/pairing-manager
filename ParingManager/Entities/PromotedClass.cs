@@ -7,7 +7,7 @@ namespace ParingManager.Entities
 {
     public class PromotedClass : Class
     {
-        public string PromotedFromString { get; set; }
-        public BaseClass PromotedFrom { get; set; }
+        public string PromotedFromList { get; set; }
+        public List<BaseClass> PromotedFrom { get; set; }
     }
 }

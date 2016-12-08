@@ -23,7 +23,7 @@ namespace ParingManager.Models
         {
             List<Character> list = new List<Character>();
 
-            list.Add(new Parent { Name = "Avatar", AvailableOn = Path.All, PersonalSkill = classes.skills.GetSkillByName("Supportive"), StartingClass = classes.GetClassByClassName("Dark Prince(ss)"), AlternateClass = new BaseClass(), InheritanceA = new BaseClass(), InheritanceB = new BaseClass(), FriendshipSupportList = "", FriendshipSupports = new List<Character>(), RomanticSupportsList = "", RomanticSupports = new List<Character>(), AvailableChildName = "Kana", AvailableChild = new Child() });
+            list.Add(new Parent { Name = CharacterNames.Avatar, AvailableOn = Path.All, PersonalSkill = classes.skills.GetSkillByName("Supportive"), StartingClass = classes.GetClassByClassName(ClassNames.DarkPrincess), AlternateClass = new BaseClass(), InheritanceA = new BaseClass(), InheritanceB = new BaseClass(), FriendshipSupportList = "", FriendshipSupports = new List<Character>(), RomanticSupportsList = "", RomanticSupports = new List<Character>(), AvailableChildName = CharacterNames.Kana, AvailableChild = new Child() });
 
             characters = list;
         }
