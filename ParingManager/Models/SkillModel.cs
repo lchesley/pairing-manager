@@ -145,6 +145,19 @@ namespace ParingManager.Models
             list.Add(new Skill { Name = SkillNames.Charm, Description = "Allies within 2 tiles have DMG +2 during battle.", LevelLearned = 10 });
             list.Add(new Skill { Name = SkillNames.DualGuardsman, Description = "When user is the support unit in Guard Stance, Shield Gauge Gain +1.", LevelLearned = 25 });
             list.Add(new Skill { Name = SkillNames.Speedtaker, Description = "When user defeats the enemy, SPD +2 for the rest of the battle. Stacks up to 10.", LevelLearned = 35 });
+            list.Add(new Skill { Name = SkillNames.HeavyBlade, Description = "User's STR +3, SPD -1.", LevelLearned = 1 });
+            list.Add(new Skill { Name = SkillNames.VeteranIntuition, Description = "CRIT EVA +15 during battles.", LevelLearned = 10 });
+            list.Add(new Skill { Name = SkillNames.Aether, Description = "SKL x 0.5% chance of triggering a Sol hit and then a Luna hit.", LevelLearned = 25 });
+            list.Add(new Skill { Name = SkillNames.Strengthtaker, Description = "When user defeats the enemy, STR +2 for the rest of the battle. Stacks up to 10.", LevelLearned = 35 });
+            list.Add(new Skill { Name = SkillNames.DualStriker, Description = "User's STR +3, SPD -1.", LevelLearned = 1 });            
+            list.Add(new Skill { Name = SkillNames.Awakening, Description = "When user defeats the enemy, STR +2 for the rest of the battle. Stacks up to 10.", LevelLearned = 35 });
+            list.Add(new Skill { Name = SkillNames.TacticalGuide, Description = "When user is the support unit in Guard Stance, lead unit gets HIT +10.", LevelLearned = 1 });
+            list.Add(new Skill { Name = SkillNames.Solidarity, Description = "Adjacent allies receive AVO +10 and CRIT EVA +10.", LevelLearned = 10 });
+            list.Add(new Skill { Name = SkillNames.Ignis, Description = "SKL% chance of adding half the user's STR (if the user has a magical weapon) or MAG (if the user has a physical weapon) as damage.", LevelLearned = 25 });
+            list.Add(new Skill { Name = SkillNames.RallySpectrum, Description = "Rally command grants All Stats +2 to allies within two squares.", LevelLearned = 35 });
+            list.Add(new Skill { Name = SkillNames.Supportive, Description = "When supporting a unit s/he has a C Support or higher with, the lead unit has HIT + 10, DMG + 2, and damage taken - 2.", LevelLearned = 1 });
+            list.Add(new Skill { Name = SkillNames.DraconicHeir, Description = "When Kana is equipped with a Dragonstone, s/he recovers 15% HP at the start of the turn.", LevelLearned = 1 });
+            list.Add(new Skill { Name = SkillNames.HealingDescant, Description = "Allies within 2 tiles recover 10% HP at the start of the turn.", LevelLearned = 1 });
 
             skills = list;
         }

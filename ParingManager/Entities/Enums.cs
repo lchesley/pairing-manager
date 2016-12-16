@@ -189,6 +189,9 @@ namespace ParingManager.Entities
         public const string Solidarity = "Solidarity";
         public const string Ignis = "Ignis";
         public const string RallySpectrum = "Rally Spectrum";
+        public const string Supportive = "Supportive";
+        public const string DraconicHeir = "Draconic Heir";
+        public const string HealingDescant = "Healing Descant";
     }
 
     public class ClassNames
@@ -262,6 +265,45 @@ namespace ParingManager.Entities
     {
         public const string Avatar = "Avatar";
         public const string Kana = "Kana";
+        public const string Jakob = "Jakob";
+        public const string Kaze = "Kaze";
+        public const string Silas = "Silas";
+        public const string Ryoma = "Ryoma";
+        public const string Takumi = "Takumi";
+        public const string Azama = "Azama";
+        public const string Hayato = "Hayato";
+        public const string Hinata = "Hinata";
+        public const string Kaden = "Kaden";
+        public const string Saizo = "Saizo";
+        public const string Subaki = "Subaki";
+        public const string Izana = "Izana";
+        public const string Shura = "Shura";
+        public const string Yukimura = "Yukimura";
+        public const string Azura = "Azura";
+        public const string Felicia = "Felicia";
+        public const string Mozu = "Mozu";
+        public const string Hinoka = "Hinoka";
+        public const string Sakura = "Sakura";
+        public const string Hana = "Hana";
+        public const string Kagero = "Kagero";
+        public const string Oboro = "Oboro";
+        public const string Orochi = "Orochi";
+        public const string Rinkah = "Rinkah";
+        public const string Setsuna = "Setsuna";
+        public const string Reina = "Reina";
+        public const string Scarlet = "Scarlet";
+        public const string Dwyer = "Dwyer";
+        public const string Shigure = "Shigure";
+        public const string Shiro = "Shiro";
+        public const string Kiragi = "Kiragi";
+        public const string Asugi = "Asugi";
+        public const string Hisame = "Hisame";
+        public const string Midori = "Midori";
+        public const string Sophie = "Sophie";
+        public const string Caeldori = "Caeldori";
+        public const string Mitama = "Mitama";
+        public const string Rhajat = "Rhajat";
+        public const string Selkie = "Selkie";
     }
 
 }

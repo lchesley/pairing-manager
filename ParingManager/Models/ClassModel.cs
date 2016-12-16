@@ -9,13 +9,36 @@ namespace ParingManager.Models
     public class ClassModel
     {
         List<Class> classes;
-        public SkillModel skills;
+        SkillModel skills;
 
         public ClassModel()
         {
             classes = new List<Class>();
             skills = new SkillModel();
             LoadClasses();
+        }
+
+        public Class GetClassByClassName(string name)
+        {
+            return classes.Where(o => o.Name == name).FirstOrDefault();
+        }
+
+        public List<string> GetClassNames()
+        {
+            List<string> list = new List<string>();
+
+            list = classes.OrderBy(o => o.Name).Select(o => o.Name).ToList<string>();
+
+            return list;
+        }
+
+        public Skill GetSkillByName(string name)
+        {
+            Skill skill = new Skill();
+
+            skill = skills.GetSkillByName(name);
+
+            return skill;
         }
 
         private void LoadClasses()
@@ -81,22 +104,12 @@ namespace ParingManager.Models
             list.Add(new PromotedClass { Name = ClassNames.Wolfssegner, Proficiencies = new List<WeaponProficiency> { WeaponProficiency.Beaststone_S }, Skills = new List<Skill> { skills.GetSkillByName(SkillNames.BetterOdds), skills.GetSkillByName(SkillNames.GrislyWound) }, PromotedFrom = new List<BaseClass>(), PromotedFromList = ClassNames.Wolfskin });
             list.Add(new SpecialClass { Name = ClassNames.Ballistician, Proficiencies = new List<WeaponProficiency> { WeaponProficiency.Bow_B }, Skills = new List<Skill> { skills.GetSkillByName(SkillNames.Survey), skills.GetSkillByName(SkillNames.OpportunityShot), skills.GetSkillByName(SkillNames.RifledBarrel), skills.GetSkillByName(SkillNames.Surefooted) }, CanPassDown = false });
             list.Add(new SpecialClass { Name = ClassNames.Witch, Proficiencies = new List<WeaponProficiency> { WeaponProficiency.Tome_S }, Skills = new List<Skill> { skills.GetSkillByName(SkillNames.Shadowgift), skills.GetSkillByName(SkillNames.WitchsBrew), skills.GetSkillByName(SkillNames.Warp), skills.GetSkillByName(SkillNames.ToxicBrew) }, CanPassDown = false });
+            list.Add(new SpecialClass { Name = ClassNames.Lodestar, Proficiencies = new List<WeaponProficiency> { WeaponProficiency.Sword_S }, Skills = new List<Skill> { skills.GetSkillByName(SkillNames.GentleBlade), skills.GetSkillByName(SkillNames.Charm), skills.GetSkillByName(SkillNames.DualGuardsman), skills.GetSkillByName(SkillNames.Speedtaker) }, CanPassDown = false });
+            list.Add(new SpecialClass { Name = ClassNames.Vanguard, Proficiencies = new List<WeaponProficiency> { WeaponProficiency.Sword_A, WeaponProficiency.Axe_B }, Skills = new List<Skill> { skills.GetSkillByName(SkillNames.HeavyBlade), skills.GetSkillByName(SkillNames.VeteranIntuition), skills.GetSkillByName(SkillNames.Aether), skills.GetSkillByName(SkillNames.Strengthtaker) }, CanPassDown = false });
+            list.Add(new SpecialClass { Name = ClassNames.GreatLord, Proficiencies = new List<WeaponProficiency> { WeaponProficiency.Sword_A, WeaponProficiency.Spear_B }, Skills = new List<Skill> { skills.GetSkillByName(SkillNames.DualStriker), skills.GetSkillByName(SkillNames.Charm), skills.GetSkillByName(SkillNames.Aether), skills.GetSkillByName(SkillNames.Awakening) }, CanPassDown = false });
+            list.Add(new SpecialClass { Name = ClassNames.Grandmaster, Proficiencies = new List<WeaponProficiency> { WeaponProficiency.Sword_B, WeaponProficiency.Tome_A }, Skills = new List<Skill> { skills.GetSkillByName(SkillNames.TacticalGuide), skills.GetSkillByName(SkillNames.Solidarity), skills.GetSkillByName(SkillNames.Ignis), skills.GetSkillByName(SkillNames.RallySpectrum) }, CanPassDown = false });
 
             classes = list;
-        }
-
-        public Class GetClassByClassName(string name)
-        {
-            return classes.Where(o => o.Name == name).FirstOrDefault();
-        }
-
-        public List<string> GetClassNames()
-        {
-            List<string> list = new List<string>();
-
-            list = classes.OrderBy(o => o.Name).Select(o => o.Name).ToList<string>();
-
-            return list;
-        }
+        }        
     }
 }
