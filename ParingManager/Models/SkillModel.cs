@@ -158,6 +158,9 @@ namespace ParingManager.Models
             list.Add(new Skill { Name = SkillNames.Supportive, Description = "When supporting a unit s/he has a C Support or higher with, the lead unit has HIT + 10, DMG + 2, and damage taken - 2.", LevelLearned = 1 });
             list.Add(new Skill { Name = SkillNames.DraconicHeir, Description = "When Kana is equipped with a Dragonstone, s/he recovers 15% HP at the start of the turn.", LevelLearned = 1 });
             list.Add(new Skill { Name = SkillNames.HealingDescant, Description = "Allies within 2 tiles recover 10% HP at the start of the turn.", LevelLearned = 1 });
+            list.Add(new Skill { Name = SkillNames.DevotedPartner, Description = "If Corrin is the lead Unit, Corrin's DMG +2 and damage taken -2.", LevelLearned = 1 });
+            list.Add(new Skill { Name = SkillNames.EvasivePartner, Description = "If Corrin is the lead unit, Corrin's AVO +15 and damage taken -3.", LevelLearned = 1 });
+            list.Add(new Skill { Name = SkillNames.BornSteward, Description = "When fighting in My Castle, HIT/AVO +20, DMG +2, damage taken -2.", LevelLearned = 1 });
 
             skills = list;
         }

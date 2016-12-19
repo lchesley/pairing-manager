@@ -192,6 +192,9 @@ namespace ParingManager.Entities
         public const string Supportive = "Supportive";
         public const string DraconicHeir = "Draconic Heir";
         public const string HealingDescant = "Healing Descant";
+        public const string DevotedPartner = "Devoted Partner";
+        public const string EvasivePartner = "Evasive Partner";
+        public const string BornSteward = "Born Steward";
     }
 
     public class ClassNames
