@@ -10,6 +10,7 @@ namespace ParingManager.Entities
         public string Name { get; set; }
         public Class StartingClass { get; set; }
         public Class AlternateClass { get; set; }
+        public Class AlternateClassB { get; set; }
         public Class InheritanceA { get; set; }
         public Class InheritanceB { get; set; }
         public Skill PersonalSkill { get; set; }

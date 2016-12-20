@@ -195,6 +195,16 @@ namespace ParingManager.Entities
         public const string DevotedPartner = "Devoted Partner";
         public const string EvasivePartner = "Evasive Partner";
         public const string BornSteward = "Born Steward";
+        public const string MiraculousSave = "Miraculous Save";
+        public const string LuckyCharm = "Lucky Charm";
+        public const string PerfectPitch = "Perfect Pitch";
+        public const string VowOfFriendship = "Vow of Friendship";
+        public const string Mischievous = "Mischievous";
+        public const string Highwayman = "Highwayman";
+        public const string Forager = "Forager";
+        public const string InExtremis = "In Extremis";
+        public const string Peacebringer = "Peacebringer";
+        public const string FieryBlood = "Fiery Blood";
     }
 
     public class ClassNames

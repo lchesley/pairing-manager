@@ -155,12 +155,22 @@ namespace ParingManager.Models
             list.Add(new Skill { Name = SkillNames.Solidarity, Description = "Adjacent allies receive AVO +10 and CRIT EVA +10.", LevelLearned = 10 });
             list.Add(new Skill { Name = SkillNames.Ignis, Description = "SKL% chance of adding half the user's STR (if the user has a magical weapon) or MAG (if the user has a physical weapon) as damage.", LevelLearned = 25 });
             list.Add(new Skill { Name = SkillNames.RallySpectrum, Description = "Rally command grants All Stats +2 to allies within two squares.", LevelLearned = 35 });
-            list.Add(new Skill { Name = SkillNames.Supportive, Description = "When supporting a unit s/he has a C Support or higher with, the lead unit has HIT + 10, DMG + 2, and damage taken - 2.", LevelLearned = 1 });
-            list.Add(new Skill { Name = SkillNames.DraconicHeir, Description = "When Kana is equipped with a Dragonstone, s/he recovers 15% HP at the start of the turn.", LevelLearned = 1 });
-            list.Add(new Skill { Name = SkillNames.HealingDescant, Description = "Allies within 2 tiles recover 10% HP at the start of the turn.", LevelLearned = 1 });
-            list.Add(new Skill { Name = SkillNames.DevotedPartner, Description = "If Corrin is the lead Unit, Corrin's DMG +2 and damage taken -2.", LevelLearned = 1 });
-            list.Add(new Skill { Name = SkillNames.EvasivePartner, Description = "If Corrin is the lead unit, Corrin's AVO +15 and damage taken -3.", LevelLearned = 1 });
-            list.Add(new Skill { Name = SkillNames.BornSteward, Description = "When fighting in My Castle, HIT/AVO +20, DMG +2, damage taken -2.", LevelLearned = 1 });
+            list.Add(new Skill { Name = SkillNames.Supportive, Description = "When supporting a unit s/he has a C Support or higher with, the lead unit has HIT + 10, DMG + 2, and damage taken - 2.", LevelLearned = 0 });
+            list.Add(new Skill { Name = SkillNames.DraconicHeir, Description = "When Kana is equipped with a Dragonstone, s/he recovers 15% HP at the start of the turn.", LevelLearned = 0 });
+            list.Add(new Skill { Name = SkillNames.HealingDescant, Description = "Allies within 2 tiles recover 10% HP at the start of the turn.", LevelLearned = 0 });
+            list.Add(new Skill { Name = SkillNames.DevotedPartner, Description = "If Corrin is the lead Unit, Corrin's DMG +2 and damage taken -2.", LevelLearned = 0 });
+            list.Add(new Skill { Name = SkillNames.EvasivePartner, Description = "If Corrin is the lead unit, Corrin's AVO +15 and damage taken -3.", LevelLearned = 0 });
+            list.Add(new Skill { Name = SkillNames.BornSteward, Description = "When fighting in My Castle, HIT/AVO +20, DMG +2, damage taken -2.", LevelLearned = 0 });
+            list.Add(new Skill { Name = SkillNames.MiraculousSave, Description = "If Kaze is the support unit, the lead unit has a LUC% chance of surviving a lethal hit with 1 HP.", LevelLearned = 0 });
+            list.Add(new Skill { Name = SkillNames.LuckyCharm, Description = "Skills with an activation rate dependent on the LUC stat have their rate increased by 20 %.Such skills include Salvage Blow, Future Sight, Miracle, Profiteer, and Good Fortune.", LevelLearned = 0 });
+            list.Add(new Skill { Name = SkillNames.PerfectPitch, Description = "Command that causes allies within 2 tiles who have lower HP than Shigure to recover 10 % HP.Counts as a Rally.", LevelLearned = 0 });
+            list.Add(new Skill { Name = SkillNames.VowOfFriendship, Description = "If Corrin is an ally and under 50% HP, Silas' DMG +3 and damage taken -3.", LevelLearned = 0 });
+            list.Add(new Skill { Name = SkillNames.Mischievous, Description = "When Sophie triggers battle and hits an enemy, her target's DEF -3 and their clothes get torn off.", LevelLearned = 0 });
+            list.Add(new Skill { Name = SkillNames.Highwayman, Description = "When Shura triggers the battle and the enemy cannot counter, the enemy has STR and SPD - 3 after the battle for one turn.", LevelLearned = 0 });
+            list.Add(new Skill { Name = SkillNames.Forager, Description = "When standing on Mountain, Forest, Wasteland, or Field terrain, Mozu recovers 20 % HP at the start of the turn.", LevelLearned = 0 });
+            list.Add(new Skill { Name = SkillNames.InExtremis, Description = "When Scarlet's HP is under a quarter, CRIT +30.", LevelLearned = 0 });
+            list.Add(new Skill { Name = SkillNames.Peacebringer, Description = "Allies and enemies within 2 tiles receive damage taken -2.", LevelLearned = 0 });
+            list.Add(new Skill { Name = SkillNames.FieryBlood, Description = "When Rinkah's HP is not full, DMG +4.", LevelLearned = 0 });
 
             skills = list;
         }
