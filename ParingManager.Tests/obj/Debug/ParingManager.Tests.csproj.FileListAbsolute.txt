@@ -1,0 +1,1 @@
+E:\UserData\Documents\GitHub\pairing-manager\pairing-manager\ParingManager.Tests\obj\Debug\ParingManager.Tests.csprojResolveAssemblyReference.cache

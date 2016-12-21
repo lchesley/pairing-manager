@@ -16,6 +16,24 @@ namespace ParingManager.Models
             LoadSkills();
         }
 
+        public Skill GetSkillByName(string name)
+        {
+            Skill skill = new Skill();
+
+            skill = skills.Where(o => o.Name == name).FirstOrDefault();
+
+            return skill;
+        }
+
+        public List<string> GetSkillNames()
+        {
+            List<string> list = new List<string>();
+
+            list = skills.OrderBy(o => o.Name).Select(o => o.Name).ToList<string>();
+
+            return list;
+        }
+
         private void LoadSkills()
         {
             List<Skill> list = new List<Skill>();
@@ -171,26 +189,33 @@ namespace ParingManager.Models
             list.Add(new Skill { Name = SkillNames.InExtremis, Description = "When Scarlet's HP is under a quarter, CRIT +30.", LevelLearned = 0 });
             list.Add(new Skill { Name = SkillNames.Peacebringer, Description = "Allies and enemies within 2 tiles receive damage taken -2.", LevelLearned = 0 });
             list.Add(new Skill { Name = SkillNames.FieryBlood, Description = "When Rinkah's HP is not full, DMG +4.", LevelLearned = 0 });
+            list.Add(new Skill { Name = SkillNames.QuietStrength, Description = "Allies within 2 tiles take 2 less damage.", LevelLearned = 0 });
+            list.Add(new Skill { Name = SkillNames.FearsomeBlow, Description = "When Hana triggers the battle and defeats her target, enemies adjacent to Hana have their HP reduced by 20 %.", LevelLearned = 0 });
+            list.Add(new Skill { Name = SkillNames.Perfectionist, Description = "When Subaki's HP is full, HIT and AVO +15.", LevelLearned = 0 });
+            list.Add(new Skill { Name = SkillNames.Prodigy, Description = "At the start of battle, if the enemy's higher stat between STR or MAG is higher than Caeldori's corresponding stat, then Caeldori's DMG + 4.", LevelLearned = 0 });
+            list.Add(new Skill { Name = SkillNames.Pyrotechnics, Description = "When Saizo triggers a battle at under half HP, he and all enemies within 2 tiles have their HP reduced by 20 %.", LevelLearned = 0 });
+            list.Add(new Skill { Name = SkillNames.SweetTooth, Description = "After choosing to Wait, Asugi eats sweets to recover 4 HP.", LevelLearned = 0 });
+            list.Add(new Skill { Name = SkillNames.Capture, Description = "Use this command to capture enemies.", LevelLearned = 0 });
+            list.Add(new Skill { Name = SkillNames.RallyingCry, Description = "Allies within 2 tiles deal DMG +2.", LevelLearned = 0 });
+            list.Add(new Skill { Name = SkillNames.DivineRetribution, Description = "When Azama doesn't have a weapon equipped and takes damage from an adjacent enemy,the enemy receives half the same damage.", LevelLearned = 0 });
+            list.Add(new Skill { Name = SkillNames.Haiku, Description = "At the start of the turn, if Mitama has one ally directly above her and another directly below, those two allies recover 5 HP and Mitama recovers 7.", LevelLearned = 0 });
+            list.Add(new Skill { Name = SkillNames.Optimistic, Description = "Setsuna recovers x1.5 HP when healed by a staff.", LevelLearned = 0 });
+            list.Add(new Skill { Name = SkillNames.Pride, Description = "When Hayato's level is lower than the enemy's, Hayato DMG +3.", LevelLearned = 0 });
+            list.Add(new Skill { Name = SkillNames.Vendetta, Description = "When Rhajat triggers battle in a map that you've already completed before, DMG + 4.", LevelLearned = 0 });
+            list.Add(new Skill { Name = SkillNames.NohrEnmity, Description = "When engaging a Nohr-aligned enemy, Oboro deals DMG +3.", LevelLearned = 0 });
+            list.Add(new Skill { Name = SkillNames.TripleThreat, Description = "When Hinata is under half HP, half of the damage he takes from Swords, Lances, or Axes is also dealt to the enemy.", LevelLearned = 0 });
+            list.Add(new Skill { Name = SkillNames.Calm, Description = "After choosing to Wait, SKL and RES +4 for one turn.", LevelLearned = 0 });
+            list.Add(new Skill { Name = SkillNames.Competitive, Description = "When Takumi is the lead unit and his level is lower than that of his support unit, Takumi's CRIT +10, DMG +3, and damage taken -1.", LevelLearned = 0 });
+            list.Add(new Skill { Name = SkillNames.Optimist, Description = "After choosing to Wait, SPD +4 and LUC +8 for one turn.", LevelLearned = 0 });
+            list.Add(new Skill { Name = SkillNames.ShurikenMastery, Description = "When Kagero receives damage from a Kunai attack, the attacker receives half the same damage and the Kunai's stat reduction effect.", LevelLearned = 0 });
+            list.Add(new Skill { Name = SkillNames.MorbidCelebration, Description = "When Reina triggers the battle, she recovers 20% HP if she defeats her target.", LevelLearned = 0 });
+            list.Add(new Skill { Name = SkillNames.Reciprocity, Description = "When a unit heals Kaden with a healing staff, that unit recovers HP equal to half the amount Kaden was healed for.", LevelLearned = 0 });
+            list.Add(new Skill { Name = SkillNames.Playthings, Description = "At the start of the turn, all enemies that are adjacent to Selkie take 5 damage.", LevelLearned = 0 });
+            list.Add(new Skill { Name = SkillNames.Bushido, Description = "When Ryoma is the lead unit, if his level is higher than his support unit's, then Ryoma's CRIT +10, DMG +2, and damage taken -2.", LevelLearned = 0 });
+            list.Add(new Skill { Name = SkillNames.NobleCause, Description = "When Shiro is the lead unit and his support unit does not have full HP, Shiro's DMG +3 and damage taken -1.", LevelLearned = 0 });
+            list.Add(new Skill { Name = SkillNames.NobleCause, Description = "HIT +5 for all allies.", LevelLearned = 0 });
 
             skills = list;
-        }
-
-        public Skill GetSkillByName(string name)
-        {
-            Skill skill = new Skill();
-
-            skill = skills.Where(o => o.Name == name).FirstOrDefault();
-
-            return skill;
-        }
-
-        public List<string> GetSkillNames()
-        {
-            List<string> list = new List<string>();
-
-            list = skills.OrderBy(o => o.Name).Select(o => o.Name).ToList<string>();
-
-            return list;
         }
     }
 }

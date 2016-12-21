@@ -205,6 +205,31 @@ namespace ParingManager.Entities
         public const string InExtremis = "In Extremis";
         public const string Peacebringer = "Peacebringer";
         public const string FieryBlood = "Fiery Blood";
+        public const string QuietStrength = "Quiet Strength";
+        public const string FearsomeBlow = "Fearsome Blow";
+        public const string Perfectionist = "Perfectionist";
+        public const string Prodigy = "Prodigy";
+        public const string Pyrotechnics = "Pyrotechnics";
+        public const string SweetTooth = "Sweet Tooth";
+        public const string Capture = "Capture";
+        public const string RallyingCry = "Rallying Cry";
+        public const string DivineRetribution = "Divine Retribution";
+        public const string Haiku = "Haiku";
+        public const string Optimistic = "Optimistic";
+        public const string Pride = "Pride";
+        public const string Vendetta = "Vendetta";
+        public const string NohrEnmity = "Nohr Enmity";
+        public const string TripleThreat = "Triple Threat";
+        public const string Calm = "Calm";
+        public const string Competitive = "Competitive";
+        public const string Optimist = "Optimist";
+        public const string ShurikenMastery = "Shurkien Mastery";
+        public const string MorbidCelebration = "Morbid Celebration";
+        public const string Reciprocity = "Reciprocity";
+        public const string Playthings = "Playthings";
+        public const string Bushido = "Bushido";
+        public const string NobleCause = "Noble Cause";
+        public const string Perspicacious = "Perspicacious";
     }
 
     public class ClassNames
